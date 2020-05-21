@@ -1,0 +1,24 @@
+﻿<Window x:Class="Personal_Finance.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Personal_Finance"
+        mc:Ignorable="d"
+        Title="RegistrationPage" Height="500" Width="800">
+    <Grid>
+        <TextBox x:Name="Regbanner" HorizontalAlignment="Left" Height="53" TextWrapping="Wrap" Text="Welcome New User!" VerticalAlignment="Top" Width="470" Margin="155,58,0,0" FontSize="24" FontWeight="Bold" TextAlignment="Center"/>
+        <Label x:Name="_FirstName" Content="First Name:" HorizontalAlignment="Left" Height="47" Margin="116,153,0,0" VerticalAlignment="Top" Width="116" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="_LastName" Content="Last Name:" HorizontalAlignment="Left" Height="47" Margin="116,205,0,0" VerticalAlignment="Top" Width="116" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="_EmailAddress" Content="Email Address:" HorizontalAlignment="Left" Height="47" Margin="80,257,0,0" VerticalAlignment="Top" Width="152" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="_Password" Content="Password:" HorizontalAlignment="Left" Height="47" Margin="131,309,0,0" VerticalAlignment="Top" Width="101" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:Name="firstName" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="297" Margin="268,153,0,0" TextChanged="firstName_TextChanged" FontSize="20"/>
+        <TextBox x:Name="lastName" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="297" Margin="268,205,0,0" FontSize="20" TextChanged="lastName_TextChanged"/>
+        <TextBox x:Name="emailAddress" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="297" Margin="268,261,0,0" FontSize="20"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="297" Margin="268,313,0,0" FontSize="20" TextChanged="password_TextChanged"/>
+        <Button x:Name="Register" Content="Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="196" Margin="171,388,0,0" Height="49" FontSize="18" FontWeight="Bold" Click="Register_Click"/>
+        <Button x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="196" Margin="445,388,0,0" Height="49" FontSize="18" FontWeight="Bold" Click="Cancel_Click"/>
+        
+
+    </Grid>
+</Window>
